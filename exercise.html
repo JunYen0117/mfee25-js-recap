@@ -54,6 +54,27 @@
                 console.log("其他顏色");
             }
         })("pink")
+
+        let fibonacciGenerator = (count)=>{
+            let array = [];
+            array.push(0)
+            array.push(1)
+            
+            if(count==0){
+                array= []
+                console.log(array)
+            }else if(count==1){
+                console.log(array=[array[0]]);
+            }else if(count==2){
+                console.log(array);
+            }else if(count>2){
+                for(i=2 ; i < count ; i++){
+                array.push(array[i-1]+array[i-2])
+                }
+                console.log(array);
+            }
+        }
+        fibonacciGenerator(20);
     </script>
 </body>
 </html>
